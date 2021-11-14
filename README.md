@@ -1,5 +1,6 @@
 # Patient Management Service
 Web service for patient management
+
 ## How to Run
 You run it using the ``java -jar`` command.
 * Clone this repository 
@@ -16,6 +17,9 @@ Service is running
 
 ## About the Service
 The service is patient management REST service. It uses an in-memory database (H2) to store the data.
+
+###To view your H2 in-memory datbase
+The 'test' profile runs on H2 in-memory database. To view and query the database you can browse to ``http://localhost:8080/h2-console``. JDBC URL is ``jdbc:h2:mem:testdb`` and default username is 'sa' with a blank password. 
 
 Here are some endpoints you can call:
 ### Create a patient resource
