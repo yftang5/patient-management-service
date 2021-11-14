@@ -28,7 +28,7 @@ Here are some endpoints you can call:
 ### Create a patient resource
 ```
 POST http://localhost:8080/patients
-
+Response: HTTP 201
 json
 {
     "firstName": "Jay",
