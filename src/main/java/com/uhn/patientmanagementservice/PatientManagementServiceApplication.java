@@ -8,7 +8,7 @@ public class PatientManagementServiceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PatientManagementServiceApplication.class, args);
-		System.out.println("Sevice is running");
+		System.out.println("Service is running");
 	}
 
 }
