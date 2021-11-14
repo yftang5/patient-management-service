@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "00ca9e73-933a-43bf-86e2-75f20e31d498",
+		"name": "Patient API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add patient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Jay\",\n    \"lastName\": \"Fung\",\n    \"dob\": \"2000-02-14\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/patients/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"patients",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all patients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get patients by first name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/patients/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"patients",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get patient by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/patients/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"patients",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
