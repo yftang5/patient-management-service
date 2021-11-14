@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.uhn</groupId>
 	<artifactId>patient-management-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>patient-management-service</name>
 	<description>Web service for patient-management</description>
 	<properties>
