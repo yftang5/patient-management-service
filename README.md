@@ -19,7 +19,16 @@ The service is patient management REST service. It uses an in-memory database (H
 
 Here are some endpoints you can call:
 ### Create a patient resource
+```
+POST http://localhost:8080/patients
 
+json
+{
+    "firstName": "Jay",
+    "lastName": "Fung",
+    "dob": "2000-02-14"
+}
+```
 ### Retrieve a list of all patients
 ```
 GET http://localhost:8080/patients
