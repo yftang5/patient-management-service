@@ -28,16 +28,41 @@ json
     "lastName": "Fung",
     "dob": "2000-02-14"
 }
+
+curl command:
+curl --location --request POST 'localhost:8080/patients/' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "firstName": "Jay",
+    "lastName": "Fung",
+    "dob": "2000-02-14"
+}'
 ```
 ### Retrieve a list of all patients
 ```
 GET http://localhost:8080/patients
+Response: HTTP 200
+Content: the list of all patients
+
+curl command:
+curl --location --request GET 'localhost:8080/patients'
 ```
 ### Retrieve a patient by id
 ```
 GET http://localhost:8080/patients/1
+Response: HTTP 200
+Content: patient
+
+curl command:
+curl --location --request GET 'localhost:8080/patients/1'
 ```
 ### Retrieve a patient by first name
 ```
 GET http://localhost:8080/patients?firstname=tom
+GET http://localhost:8080/patients
+Response: HTTP 200
+Content: the list of patients matched
+
+curl command:
+curl --location --request GET 'localhost:8080/patients?firstname=tom'
 ```
