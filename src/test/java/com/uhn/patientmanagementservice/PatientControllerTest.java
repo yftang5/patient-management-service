@@ -49,7 +49,7 @@ public class PatientControllerTest {
 	Patient patient3 = new Patient(3L, "David", "Watson", parseDate("1999-11-14"));
 
 	@Test
-	public void getAllPatients_success() throws Exception{
+	public void retrievePatients_success() throws Exception{
 		List<Patient> patients = new ArrayList<>(Arrays.asList(patient1, patient2, patient3));
 		Mockito.when(patientService.getAllPatients()).thenReturn(patients);
 		
@@ -85,7 +85,7 @@ public class PatientControllerTest {
 	}
 	
 	@Test
-	public void retrievePatientByFirstName_success() throws Exception{
+	public void retrievePatients_byFirstName_success() throws Exception{
 		List<Patient> patients = new ArrayList<>(Arrays.asList(patient3));
 		Mockito.when(patientService.getPatientByFirstName("david")).thenReturn(patients);
 		
@@ -99,7 +99,7 @@ public class PatientControllerTest {
 	}
 	
 	@Test
-	public void retrievePatientByFirstName_notFound() throws Exception{
+	public void retrievePatients_byFirstName_notFound() throws Exception{
 		List<Patient> patients = new ArrayList<>();
 		Mockito.when(patientService.getPatientByFirstName("Dave")).thenReturn(patients);
 		
